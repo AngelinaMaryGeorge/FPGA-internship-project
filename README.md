@@ -4,7 +4,7 @@
 [![Vivado](https://img.shields.io/badge/Vivado-2024.x-blue)](https://www.xilinx.com/products/design-tools/vivado.html)
 ![Status](https://img.shields.io/badge/Status-Active-green)
 
-A high-performance **systolic array accelerator** implemented on FPGA, featuring a 2×2 processing element grid for parallel matrix computations and digital signal processing operations. This project demonstrates advanced hardware design patterns, spatial parallelism, and real-time I/O interfacing on Xilinx FPGAs.
+A high-performance **systolic array accelerator** implemented on an FPGA, featuring a 2×2 processing element grid for parallel matrix computations and digital signal processing operations. This project demonstrates advanced hardware design patterns, spatial parallelism, and real-time I/O interfacing on Xilinx FPGAs.
 
 ## 🎯 Features
 
@@ -13,7 +13,7 @@ A high-performance **systolic array accelerator** implemented on FPGA, featuring
 - **Real-Time I/O**:
   - 16 software-controlled input switches
   - 16 LED status indicators
-  - Dual 7-segment display outputs for result visualization
+  - Dual 7-segment display outputs for result visualisation
   - Push-button interface for control and reset
 - **32-bit Accumulation**: Enhanced precision with 16-bit input and 32-bit output
 - **Debounced Control**: Robust mechanical switch debouncing and edge detection
@@ -21,11 +21,11 @@ A high-performance **systolic array accelerator** implemented on FPGA, featuring
 
 ## 📋 Project Overview
 
-The **Systolic Bleh** project implements a dataflow-optimized parallel processing architecture on FPGA hardware. Systolic arrays are specialized architectures where:
+The **Systolic Bleh** project implements a dataflow-optimised parallel processing architecture on FPGA hardware. Systolic arrays are specialised architectures where:
 
 - **Data flows** in a rhythmic, wave-like pattern through an array of processing elements
 - **Computations** occur simultaneously in multiple PEs, enabling massive parallelism
-- **No global communication** required—each PE only communicates with immediate neighbors
+- **No global communication** required—each PE only communicates with immediate neighbours
 - **High throughput** for matrix operations and signal processing workloads
 
 This implementation provides a practical framework for understanding systolic designs, with full HDL source and synthesis infrastructure.
@@ -100,7 +100,7 @@ systolicbleh/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/username/systolic-bleh.git
+git clone https://github.com/AngelinaMaryGeorge/FPGA-internship-project.git
 cd systolic-bleh
 ```
 
@@ -129,7 +129,7 @@ report_timing
 
 **Option A: Vivado GUI**
 1. Tools → Program and Debug → Program Device
-2. Select generated `.bit` file from `systolicbleh.runs/impl_1/`
+2. Select the generated `.bit` file from `systolicbleh.runs/impl_1/`
 3. Click Program
 
 **Option B: Hardware Manager**
@@ -193,14 +193,14 @@ report_timing -sort_by group -max_paths 10
 report_timing_summary
 ```
 
-### Resource Utilization
+### Resource Utilisation
 ```tcl
 report_utilization -hierarchical
 ```
 
 ## 🧪 Simulation & Testing
 
-### Running Behavioral Simulation
+### Running Behavioural Simulation
 ```tcl
 launch_simulation
 run_all
@@ -226,11 +226,11 @@ See `systolicbleh.sim/sim_1/behav/` for testbench files and waveforms.
 - Generates clean edge-triggered pulses from noisy switch inputs
 
 ### Clock Domain Crossing
-- Synchronous design operating on 100 MHz system clock
+- Synchronous design operating on a 100 MHz system clock
 - All data flows respect clock domain constraints
 - Reset signal properly propagated across all modules
 
-### Resource Optimization
+### Resource Optimisation
 - Minimal logic for control structures
 - Data-dominated design (PEs consume ~70% of resources)
 - Scalable: 2×2 array easily extends to 4×4, 8×8 configurations
