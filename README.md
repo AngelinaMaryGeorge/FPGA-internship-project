@@ -265,9 +265,7 @@ Contributions are welcome! Areas for enhancement:
 - [Systolic Array Research](https://en.wikipedia.org/wiki/Systolic_array)
 - [HDL Best Practices](https://docs.xilinx.com/r/2022.1-English/ug901-vivado-synthesis/Introduction)
 
-## 📄 License
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Authors
 
