@@ -1,0 +1,77 @@
+# Vivado Build and Project Files
+*.xpr
+*.xpr.bak
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+
+# Generated Files
+*.jou
+*.pb
+*.dcp
+*.bit
+*.rpt
+*.rpx
+*.xml
+*.tcl
+
+# Vivado IDE Files
+.Xil/
+.DS_Store
+*.backup.*
+vivado*.backup.jou
+vivado*.backup.log
+
+# Build Artifacts
+*.vdi
+*.backup.vdi
+*.o
+*.a
+*.so
+
+# Simulation and Synthesis
+xsim.key
+xsim.wdb
+*.wdb
+webtalk.jou
+webtalk.log
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+Thumbs.db
+.DS_Store
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+~*
+
+# Vivado Specific
+.hbs
+htr.txt
+dfx_runtime.txt
+clockInfo.txt
+ISEWrap.*
+runme.*
+rundef.*
+project.wdf
+init_design.pb
+opt_design.pb
+phys_opt_design.pb
+place_design.pb
+route_design.pb
+write_bitstream.pb
