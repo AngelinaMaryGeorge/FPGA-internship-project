@@ -1,4 +1,4 @@
-# Systolic Bleh: FPGA-Based Systolic Array Processor
+# FPGA-Based Systolic Array Processor
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vivado](https://img.shields.io/badge/Vivado-2024.x-blue)](https://www.xilinx.com/products/design-tools/vivado.html)
