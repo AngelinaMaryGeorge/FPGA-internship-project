@@ -1,8 +1,5 @@
 # FPGA-Based Systolic Array Processor
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Vivado](https://img.shields.io/badge/Vivado-2024.x-blue)](https://www.xilinx.com/products/design-tools/vivado.html)
-![Status](https://img.shields.io/badge/Status-Active-green)
 
 A high-performance **systolic array accelerator** implemented on an FPGA, featuring a 2×2 processing element grid for parallel matrix computations and digital signal processing operations. This project demonstrates advanced hardware design patterns, spatial parallelism, and real-time I/O interfacing on Xilinx FPGAs.
 
