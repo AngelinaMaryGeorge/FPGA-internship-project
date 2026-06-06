@@ -272,7 +272,7 @@ Contributions are welcome! Areas for enhancement:
 **Angelina Mary George, Neha Ann Philip, Bhagath S**  
 FPGA Engineers | Hardware Design Enthusiast
 
-- GitHub: [@elysian-x, @angelinamarygeorge, @bhagathst](https://github.com/username)
+- GitHub: [@elysian-x , @angelinamarygeorge , @bhagathst](https://github.com/username)
 
 ## ⭐ Acknowledgments
 
