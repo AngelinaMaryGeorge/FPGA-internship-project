@@ -1,9 +1,9 @@
 # FPGA-Based Systolic Array Processor
 
 
-A high-performance **systolic array accelerator** implemented on an FPGA, featuring a 2×2 processing element grid for parallel matrix computations and digital signal processing operations. This project demonstrates advanced hardware design patterns, spatial parallelism, and real-time I/O interfacing on Xilinx FPGAs.
+A **systolic matrix multiplier** implemented on an FPGA, featuring a 2×2 processing element grid for parallel matrix computations and digital signal processing operations.
 
-## 🎯 Features
+##  Features
 
 - **Systolic Architecture**: 2×2 grid of processing elements with tightly-coupled data flow
 - **Spatial Parallelism**: Simultaneous computation across multiple data elements
@@ -13,10 +13,10 @@ A high-performance **systolic array accelerator** implemented on an FPGA, featur
   - Dual 7-segment display outputs for result visualisation
   - Push-button interface for control and reset
 - **32-bit Accumulation**: Enhanced precision with 16-bit input and 32-bit output
-- **Debounced Control**: Robust mechanical switch debouncing and edge detection
-- **100 MHz Operation**: High-performance clock domain with synchronous design
+- **Debounced Control**: Mechanical switch debouncing and edge detection
+- **100 MHz Operation**: Clock domain with synchronous design
 
-## 📋 Project Overview
+## Project Overview
 
 The **Systolic Bleh** project implements a dataflow-optimised parallel processing architecture on FPGA hardware. Systolic arrays are specialised architectures where:
 
@@ -27,7 +27,7 @@ The **Systolic Bleh** project implements a dataflow-optimised parallel processin
 
 This implementation provides a practical framework for understanding systolic designs, with full HDL source and synthesis infrastructure.
 
-## 🏗️ Architecture
+##  Architecture
 
 ### System Hierarchy
 
@@ -60,7 +60,7 @@ Input:  clk, reset, clr_acc_in, in_a[15:0], in_b[15:0]
 Output: clr_acc_out_a, clr_acc_out_b, out_a[15:0], out_b[15:0], acc[31:0]
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 systolicbleh/
@@ -80,10 +80,10 @@ systolicbleh/
 └── systolicbleh.xpr               # Vivado project file
 ```
 
-## 🛠️ Prerequisites
+##  Prerequisites
 
 ### Hardware
-- **FPGA Board**: Xilinx-based development board (tested with Artix-7)
+- **FPGA Board**: Xilinx-based development board (tested with Spartan 7)
 - **Connections**: USB for JTAG programming
 - **Power**: Standard development board power supply
 
@@ -93,7 +93,7 @@ systolicbleh/
   - License: Free WebPACK license available
 - **Git**: For version control (optional)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 ```bash
@@ -138,7 +138,7 @@ program_hw_devices [lindex [get_hw_devices] 0] -file boolean_systolic_top.bit
 close_hw_target
 ```
 
-## 💻 Usage
+##  Usage
 
 ### Input Control
 
@@ -163,7 +163,7 @@ close_hw_target
 3. Monitor LEDs for operation completion
 4. View results on dual 7-segment displays
 
-## 🔧 Building from Source
+##  Building from Source
 
 ### Full Build Flow
 ```tcl
@@ -205,7 +205,7 @@ run_all
 
 See `systolicbleh.sim/sim_1/behav/` for testbench files and waveforms.
 
-## 📊 Performance Metrics
+## Performance Metrics
 
 | Metric | Value |
 |--------|-------|
@@ -215,7 +215,7 @@ See `systolicbleh.sim/sim_1/behav/` for testbench files and waveforms.
 | **Throughput** | Up to 4 parallel MACs/cycle |
 | **Latency** | ~4-6 cycles (depends on data routing) |
 
-## 🔍 Design Highlights
+##  Design Highlights
 
 ### Debouncing Strategy
 - Implements **Trixie debouncing** algorithm for mechanical switches
@@ -232,7 +232,7 @@ See `systolicbleh.sim/sim_1/behav/` for testbench files and waveforms.
 - Data-dominated design (PEs consume ~70% of resources)
 - Scalable: 2×2 array easily extends to 4×4, 8×8 configurations
 
-## 📝 File Descriptions
+##  File Descriptions
 
 | File | Purpose |
 |------|---------|
@@ -241,7 +241,7 @@ See `systolicbleh.sim/sim_1/behav/` for testbench files and waveforms.
 | `pe_systolic.v` | Single processing element (multiply-accumulate + routing) |
 | `boolean_board.xdc` | Pin constraints and timing specifications for target board |
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Areas for enhancement:
 
@@ -252,14 +252,9 @@ Contributions are welcome! Areas for enhancement:
 - [ ] Documentation and tutorials
 - [ ] Hardware-software co-design examples
 
-**To contribute:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
-## 📚 References
+
+##  References
 
 - [Xilinx Vivado Documentation](https://www.xilinx.com/support/documentation-navigation/design-hubs/vivado.html)
 - [Systolic Array Research](https://en.wikipedia.org/wiki/Systolic_array)
